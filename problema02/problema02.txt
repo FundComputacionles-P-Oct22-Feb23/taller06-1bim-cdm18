@@ -1,0 +1,14 @@
+1. Inicio
+
+2.  contador1, i[0-n] <-- 5
+3.  contador2, i[0-n] <-- 10
+4.  reporte, x (7000)[{1-9},{a-z},{A-Z}, {/}, {BS}] 
+5.  reporte <-- ""
+6.  Mientras contador1 <= 30 entonces
+7. 	reporte <-- reporte + contador1 + "/" + contador2 + "\n"
+8. 	contador1 <-- contador1 + 5
+9. 	contador2 <-- contador2 + 2
+10. Fin  Mientras
+11. Escribir reporte
+12. Fin
+ 

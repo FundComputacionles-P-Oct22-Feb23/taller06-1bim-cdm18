@@ -1,0 +1,39 @@
+1. Inicio
+
+2. tipo, i [0-3] 
+3. contador, i [0-n] <-- 1
+4. nombreCliente, x(500)[{A-Z}, {a-z}, {BS}]
+5. nombreCliente <-- ""
+6. costo, d [0 - n]
+7. reporte, x(1000)[{A-Z},  {a-z}, {BS}]
+8. reporte <-- ""
+9. precio, d [0 - n]
+10. descuento1, d [0 - n]
+11. descuento2, d [0 - n]
+  
+12.   Mientras contador <= 7 entonces
+13.	 Escribir "Ingrese el nombre del cliente:"
+14.	 Leer nombreCliente 
+15.	 Escribir "Ingrese el costo de la computadora:"
+16.	 Leer costo
+17.      Escribir "Que tipo de cliente es usted:)"
+18.      Leer tipo
+
+19. 	 precio <-- costo
+
+20.	  Si tipo == 1 entonces
+21.	        descuento1 <-- costo *  0.10
+22.             precio <-- costo - descuento
+23. 	  Fin Si
+
+24.       Si tipo == 2 entonces
+25.	        descuento2 <-- costo *  0.20
+26.             precio <-- costo - descuento
+27. 	  Fin Si
+28.      reporte <-- reporte + "Cliente "+ "tipo " + tipo "," 
+		 + " compra computadora con precio "+ "$" + precio + "\n"
+29.       contador <-- contador + 1
+30.  Fin Mientras
+
+31.  Escribir reporte
+32.  Fin

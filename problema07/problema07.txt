@@ -1,0 +1,28 @@
+1. Inicio
+
+2.  contador2, i[0-n] <-- 1
+3.  contador3, i[0-n] <-- 1
+4.  mensaje, x (1000)[{1-9},{a-z},{A-Z}, {/}, {BS}] 
+5.  signo, l <-- true
+
+6.  Mientras contador3 <= 10 entonces
+7. 	Si signo == true entonces
+
+8.   	mensaje <-- "-" + "1" + "/" +  contador2
+9. 	Escribir mensaje
+10. 	contador2 <-- contador2 + 1
+11. 	signo <-- false
+12.     contador3 <-- contador3+ 1
+
+13.  	De lo contrario
+14. 	mensaje <-- "+" + "1" + "/" +  contador2
+15.	Escribir mensaje
+16. 	contador2 <-- contador2 + 1
+17. 	signo <-- true
+18.     contador3 <-- contador3+ 1
+19.     Fin si
+
+20. Fin  Mientras
+21. Fin
+ 
+

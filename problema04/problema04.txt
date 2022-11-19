@@ -1,0 +1,45 @@
+1.  Inicio
+
+2.  jugador, x(700)[{a-z},{A-Z}, {BS}]
+3.  reporte, x(700)[{a-z},{A-Z}, {BS}] <-- ""
+4.  bandera, l <--- true 
+5.  opcion, x(1)[{a-z},{A-Z}, {BS}]
+6.  edad, i [0-n] 
+7.  posicion, x(700)[{a-z},{A-Z}, {BS}]
+8.  estatura, d [0-n]
+9.  promedio_edades, d [0-n]
+10. promedio_estatura, d [0-n]
+11. contador, i [0-n] <-- 1 //jugadores ingresados por ejemplo 1. Byron 2. Segundo 
+12. acumulador_edades, i <-- 0 //sumar edades de jugadores
+13. acumulador_estatura, d [0-n] <-- 0 //sumar estaturas 
+
+14.    Mientras bandera == true entonces
+
+15.      Escribir "Ingrese el nombre y apellido del jugador de futbol:"
+16.      Leer jugador
+17.      Escribir "Ingrese la edad del jugador:"
+18.      Leer edad
+19.      Escribir "Ingrese la estatura del jugador:"
+20.      Leer estatura
+21.      Escribir "Ingrese la posicion en la que juega el jugador:"
+22.      Leer posicion
+
+23.     reporte <-- reporte + contador + "." + " " + jugador + " " + "-" + posicion + "-" 
+		+ "," + " " + "edad" + edad + "," + " " + "estatura" + estatura + "\n"
+24. 	acumulador_edades <-- acumulador_edades + edad
+25.	acumulador_estatura <-- acumulador_estatura + estatura
+26. 	contador <-- contador + 1
+
+26.     Escribir "¿Desea ingresar más jugadores?" "Pulse s para terminar"
+27.     Leer opcion
+28.     Si opcion == "s" entonces
+29.       bandera <-- false
+31.     Fin si
+32.  Fin Mientras
+
+33.  promedio_edades <--  acumulador_edades/(contador - 1)
+34.  promedio_estatura <-- estatura/(contador - 1)   
+35.  Escribir reporte
+36.  Escribir "Promedio de edades: " + promedio_edades
+27.  Escribir "Promedio de estaturas: " + promedio_estatura
+38.  Fin
